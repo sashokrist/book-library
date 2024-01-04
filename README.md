@@ -23,6 +23,8 @@ run in console:
 
   Added Search functionality to search for books by name, ISBN, or description.
 
+  Forgot password.
+
   Laravel v 10, PHP 8.1, MySql 8.2/MariaDB 11.22, Tailwind CSS, Blade.
 
   To login as admin:
