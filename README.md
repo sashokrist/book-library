@@ -1,66 +1,87 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## About Project
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+To run the project follow these steps:
 
-## About Laravel
+run in console: 
+- git clone git@github.com:sashokrist/book-library.git
+- cd book-library
+- composer install
+- cp .env.example .env
+- php artisan key:generate
+- Set database credentials in .env
+- php artisan migrate --seed     //it creates admin user: admin@admin.com, password: 12345678
+- npm install and npm run dev
+- php artisan serve
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+  Routes are protected with two middleware: auth, and isAdmin.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  Admin user can activate and deactivate accounts, make regular users admin, and delete every user.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+  Laravel v 10, PHP 8.1, MySql 8.2/MariaDB 11.22, Tailwind CSS, Blade.
 
-## Learning Laravel
+  To login as admin:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+  admin user: admin@admin.com, password: 12345678
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+  Screenshots:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Welcome
+  <img width="959" alt="welcome" src="https://github.com/sashokrist/book-library/assets/11788009/f4726278-3ddd-4dc4-8cec-65dc1f5629eb">
 
-## Laravel Sponsors
+  Register
+  <img width="958" alt="register" src="https://github.com/sashokrist/book-library/assets/11788009/fa04fc2d-2b3a-4d34-970a-446c7fe5e7f4">
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+  Login
+  
+  <img width="956" alt="login" src="https://github.com/sashokrist/book-library/assets/11788009/ae70878e-c724-48d0-af63-1e05132b1636">
 
-### Premium Partners
+  admin dashboard
+<img width="941" alt="admin-dashboard" src="https://github.com/sashokrist/book-library/assets/11788009/948348f0-0273-4e82-b8ca-660130392653">
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Create book
+<img width="943" alt="create-book" src="https://github.com/sashokrist/book-library/assets/11788009/8f39d5cb-9600-471d-b84f-e0c6fab1ac3c">
 
-## Contributing
+Update book
+<img width="934" alt="update-book" src="https://github.com/sashokrist/book-library/assets/11788009/776242da-e504-4d5b-b3ee-68dff01184a5">
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Add a book to the collection
+<img width="904" alt="add-to-collection" src="https://github.com/sashokrist/book-library/assets/11788009/eafa5075-a977-4375-a56b-8634879a128e">
 
-## Code of Conduct
+Already in collection
+<img width="931" alt="already-added" src="https://github.com/sashokrist/book-library/assets/11788009/90029c9b-54a7-4ed4-a00f-70c74d7756c2">
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Delete book
 
-## Security Vulnerabilities
+<img width="905" alt="delete-book" src="https://github.com/sashokrist/book-library/assets/11788009/25b2f23b-5634-48e6-a649-94b796312b32">
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Manage users
+<img width="916" alt="manage-users" src="https://github.com/sashokrist/book-library/assets/11788009/fdda1aa7-e47d-4dc7-9751-9815339dc748">
 
-## License
+Navigation
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<img width="904" alt="navigation" src="https://github.com/sashokrist/book-library/assets/11788009/ba35b9dc-219a-4402-9d28-f5ac1fc350d2">
+
+My book
+
+<img width="916" alt="my-books" src="https://github.com/sashokrist/book-library/assets/11788009/1a96d15a-a51b-4ec6-81d2-27d44b77bd64">
+
+Edit profile
+
+<img width="815" alt="edit-profile-name-lastName-email" src="https://github.com/sashokrist/book-library/assets/11788009/96d13f2b-a4fc-4a17-a010-e53b8b0122c6">
+
+<img width="875" alt="edit-profile-new-password-delete" src="https://github.com/sashokrist/book-library/assets/11788009/4ef82450-6ab5-4ebe-b4d8-286754d4937c">
+
+Regular user
+<img width="931" alt="regular-user" src="https://github.com/sashokrist/book-library/assets/11788009/c0203960-a7d9-411c-8b4d-718010956a5d">
+
+
+
+
+
+  
+  
+
+  
+
+
+
