@@ -15,6 +15,8 @@ run in console:
 
   Routes are protected with two middleware: auth, and isAdmin.
 
+  Dashboard books and manage users have a pagination of 10 per page.
+
   Admin users can activate and deactivate accounts, make regular users admin, delete every user, and create, update, delete books, and add books to his/her collection.
 
   Regular users can add books to his/her collections, edit profiles, and see the My Books page.
