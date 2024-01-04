@@ -15,13 +15,17 @@ run in console:
 
   Routes are protected with two middleware: auth, and isAdmin.
 
-  Admin user can activate and deactivate accounts, make regular users admin, and delete every user.
+  Admin users can activate and deactivate accounts, make regular users admin, delete every user, and create, update, delete books, and add books to his/her collection.
+
+  Regular users can add books to his/her collections, edit profiles, and see the My Books page.
+
+  Added Search functionality to search for books by name, ISBN, or description.
 
   Laravel v 10, PHP 8.1, MySql 8.2/MariaDB 11.22, Tailwind CSS, Blade.
 
   To login as admin:
 
-  admin user: admin@admin.com, password: 12345678
+  email: admin@admin.com, password: 12345678
 
   Screenshots:
 
@@ -73,6 +77,15 @@ Edit profile
 
 Regular user
 <img width="931" alt="regular-user" src="https://github.com/sashokrist/book-library/assets/11788009/c0203960-a7d9-411c-8b4d-718010956a5d">
+
+Search
+
+<img width="939" alt="search" src="https://github.com/sashokrist/book-library/assets/11788009/427bb0f1-b92c-45c7-8a16-3a044f0213a2">
+
+Search result
+
+<img width="952" alt="search2" src="https://github.com/sashokrist/book-library/assets/11788009/e88922c0-3b91-4b1a-b84f-a13cea23ccf6">
+
 
 
 
