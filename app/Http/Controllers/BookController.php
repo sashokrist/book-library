@@ -73,4 +73,28 @@ class BookController extends Controller
         $book->delete();
         return redirect()->route('books.index')->with('success', 'Book deleted successfully.');
     }
+
+    public function search(Request $request)
+    {
+        $query = $request->input('query');
+
+        $books = Book::where('name', 'LIKE', '%' . $query . '%')
+            ->orWhere('isbn', 'LIKE', '%' . $query . '%')
+            ->orWhere('description', 'LIKE', '%' . $query . '%')
+            ->get();
+
+        return view('books.search', compact('books'));
+    }
+
+    public function show(Request $request)
+    {
+        $query = $request->input('query');
+
+        $books = Book::where('name', 'LIKE', '%' . $query . '%')
+            ->orWhere('isbn', 'LIKE', '%' . $query . '%')
+            ->orWhere('description', 'LIKE', '%' . $query . '%')
+            ->get();
+
+        return view('books.search', compact('books'));
+    }
 }

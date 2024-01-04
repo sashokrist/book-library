@@ -36,6 +36,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/user-books', [UserCollectionController::class, 'showUserBooks'])->name('user-books.show');
     Route::delete('/user-collections/remove/{book}', [UserCollectionController::class, 'removeBookFromCollection'])->name('user-collections.remove');
 
+    Route::get('/books/search', [BookController::class, 'search'])->name('books.search');
+
 });
 
 require __DIR__.'/auth.php';
