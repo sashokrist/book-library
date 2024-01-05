@@ -43,6 +43,12 @@ Welcome
   
   <img width="956" alt="login" src="https://github.com/sashokrist/book-library/assets/11788009/ae70878e-c724-48d0-af63-1e05132b1636">
 
+  not active yet
+  
+<img width="943" alt="not-active" src="https://github.com/sashokrist/book-library/assets/11788009/279e0731-4edd-46e6-8ec2-851c8d6b53ef">
+
+  
+
   admin dashboard
 <img width="941" alt="admin-dashboard" src="https://github.com/sashokrist/book-library/assets/11788009/948348f0-0273-4e82-b8ca-660130392653">
 
