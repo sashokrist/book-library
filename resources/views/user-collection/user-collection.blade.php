@@ -6,8 +6,15 @@
     </x-slot>
 
     @if(session('success'))
-        <div style="background-color: #28a745; color: white; padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
+        <div
+            style="background-color: #28a745; color: white; padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
             {{ session('success') }}
+        </div>
+    @endif
+    @if (session('error'))
+        <div
+            style="background-color: red; color: white; padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
+            {{ session('error') }}
         </div>
     @endif
 
@@ -23,10 +30,12 @@
                                     ISBN: {{ $book->isbn }}<br>
                                     Description: {{ $book->description }}<br>
                                     <!-- Remove Book Form -->
-                                    <form action="{{ route('user-collections.remove', $book->id) }}" method="POST" class="inline">
+                                    <form action="{{ route('user-collections.remove', $book->id) }}" method="POST"
+                                          class="inline">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700 focus:outline-none focus:shadow-outline">
+                                        <button type="submit"
+                                                class="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700 focus:outline-none focus:shadow-outline">
                                             Remove from Collection
                                         </button>
                                     </form>

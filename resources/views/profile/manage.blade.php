@@ -1,7 +1,14 @@
 <x-app-layout>
     @if(session('success'))
-        <div style="background-color: #28a745; color: white; padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
+        <div
+            style="background-color: #28a745; color: white; padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
             {{ session('success') }}
+        </div>
+    @endif
+    @if (session('error'))
+        <div
+            style="background-color: red; color: white; padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
+            {{ session('error') }}
         </div>
     @endif
 
@@ -32,20 +39,25 @@
                                     <form action="{{ route('profile.destroy', $user) }}" method="POST" class="inline">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="ml-2 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-500 hover:bg-red-700">
+                                        <button type="submit"
+                                                class="ml-2 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-500 hover:bg-red-700">
                                             Delete
                                         </button>
                                     </form>
-                                    <form action="{{ route('users.toggle-active', $user) }}" method="POST" class="inline">
+                                    <form action="{{ route('users.toggle-active', $user) }}" method="POST"
+                                          class="inline">
                                         @csrf
-                                        <button type="submit" class="ml-2 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white {{ $user->isActive ? 'bg-red-500 hover:bg-red-700' : 'bg-green-500 hover:bg-green-700' }}">
+                                        <button type="submit"
+                                                class="ml-2 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white {{ $user->isActive ? 'bg-red-500 hover:bg-red-700' : 'bg-green-500 hover:bg-green-700' }}">
                                             {{ $user->active ? 'Deactivate' : 'Activate' }}
                                         </button>
                                     </form>
 
-                                    <form action="{{ route('users.toggle-admin', $user) }}" method="POST" class="inline">
+                                    <form action="{{ route('users.toggle-admin', $user) }}" method="POST"
+                                          class="inline">
                                         @csrf
-                                        <button type="submit" class="ml-2 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white {{ $user->isAdmin ? 'bg-purple-500 hover:bg-purple-700' : 'bg-yellow-500 hover:bg-yellow-700' }}">
+                                        <button type="submit"
+                                                class="ml-2 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white {{ $user->isAdmin ? 'bg-purple-500 hover:bg-purple-700' : 'bg-yellow-500 hover:bg-yellow-700' }}">
                                             {{ $user->isAdmin ? 'Make Regular User' : 'Make Admin' }}
                                         </button>
                                     </form>
