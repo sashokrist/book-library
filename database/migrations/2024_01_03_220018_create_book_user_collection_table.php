@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('book_user_collection', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('book_id');
-            $table->unsignedBigInteger('user_collection_id');
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
 
             $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade');
-            $table->foreign('user_collection_id')->references('id')->on('user_collections')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('book_user_collections')->onDelete('cascade');
         });
     }
 

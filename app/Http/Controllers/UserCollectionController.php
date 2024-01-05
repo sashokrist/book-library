@@ -23,10 +23,7 @@ class UserCollectionController extends Controller
         $user = Auth::user();
         $bookId = $request->book_id; // Ensure this is the correct book ID
 
-        // Debug: Check the count of such books in the user's collection
-        $count = $user->books()->where('books.id', $bookId)->count();
-
-        if ($count > 0) {
+        if ($user->books()->where('book_id', $bookId)->exists()) {
             return redirect()->back()->with('error', 'This book is already in your collection.');
         }
 
