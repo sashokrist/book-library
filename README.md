@@ -35,7 +35,11 @@ run in console:
   
   password: 12345678
 
+  PHP Coding Standards Fixer - cs-fixer is installed.
+
   Laravel v 10, PHP 8.1, MySql 8.2/MariaDB 11.22, Tailwind CSS, Blade.
+
+  Total work hours: (18)h.
 
   Screenshots:
 
