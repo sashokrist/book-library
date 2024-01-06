@@ -15,23 +15,23 @@ run in console:
 
   Routes are protected with two middleware: auth, and isAdmin.
 
-  Dashboard books and manage users have a pagination of 10 per page.
+  The dashboard books page and manage users page have a pagination 10 per page.
 
   Admin users can activate and deactivate accounts, make regular users admin, delete every user, and create, update, delete books, and add books to his/her collection.
 
-  Regular users can add books to his/her collections, edit profiles, and see the My Books page.
+  Regular users can add/delete books to his/her collections, edit profiles, and see the My Books page.
 
   Option to upload user avatar.
 
-  Added Search functionality to search for books by name, ISBN, or description.
+  I added a Search functionality to search for books by name, ISBN, or description.
 
-  Forgot password.
-
-  Laravel v 10, PHP 8.1, MySql 8.2/MariaDB 11.22, Tailwind CSS, Blade.
+  Forgot the password option.
 
   To login as admin:
 
   email: admin@admin.com, password: 12345678
+
+  Laravel v 10, PHP 8.1, MySql 8.2/MariaDB 11.22, Tailwind CSS, Blade.
 
   Screenshots:
 
