@@ -29,11 +29,19 @@ run in console:
 
   Forgot the password option.
 
-  To login as admin(after running php artisan migrate --seed):
+  Create User:
+
+  To create an admin user:
+  
+  Running a command in console: php artisan db:seed, will create an admin user with these credentials:
 
   email: admin@admin.com
   
   password: 12345678
+
+  If you want to specify user info run in console command:
+
+  php artisan user:create-admin and follow the steps.
 
   PHP Coding Standards Fixer - cs-fixer is installed.
 
@@ -115,6 +123,12 @@ Keep count of the books and users
 <img width="917" alt="count3" src="https://github.com/sashokrist/book-library/assets/11788009/ac458018-be6d-45fa-a79e-3743c19a1b7e">
 
 <img width="933" alt="count2" src="https://github.com/sashokrist/book-library/assets/11788009/83c8aec5-fd05-4a45-a58a-db4ecbbdea9f">
+
+Create user.
+
+<img width="660" alt="create-user-command" src="https://github.com/sashokrist/book-library/assets/11788009/69e67ccd-19a9-4c8d-b6e5-e53b7bfac42f">
+
+
 
 
 
