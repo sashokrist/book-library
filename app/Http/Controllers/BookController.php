@@ -12,14 +12,10 @@ class BookController extends Controller
     public function index()
     {
         $books = Book::orderBy('created_at', 'desc')->paginate(10);
-        //dd($books);
+
         return view('dashboard', compact('books'));
     }
 
-
-    /**
-     * Show the form for creating a new book.
-     */
     public function create()
     {
         $users = User::all();
@@ -27,9 +23,6 @@ class BookController extends Controller
         return view('books.create', compact('users'));
     }
 
-    /**
-     * Store a newly created book in storage.
-     */
     public function store(Request $request)
     {
         $validatedData = $request->validate([
@@ -44,9 +37,6 @@ class BookController extends Controller
         return redirect()->route('books.index')->with('success', 'Book created successfully.');
     }
 
-    /**
-     * Show the form for editing the specified book.
-     */
     public function edit(Book $book)
     {
         $users = User::all();
@@ -65,9 +55,6 @@ class BookController extends Controller
         return redirect()->route('books.index')->with('success', 'Book updated successfully.');
     }
 
-    /**
-     * Remove the specified book from storage.
-     */
     public function destroy(Book $book)
     {
         $book->delete();

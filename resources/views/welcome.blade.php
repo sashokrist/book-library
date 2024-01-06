@@ -28,6 +28,18 @@
                             <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
                         @endif
                     @endauth
+                        @if(session('success'))
+                            <div
+                                style="background-color: #28a745; color: white; padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+                        @if (session('error'))
+                            <div
+                                style="background-color: red; color: white; padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
+                                {{ session('error') }}
+                            </div>
+                        @endif
                 </div>
             @endif
 

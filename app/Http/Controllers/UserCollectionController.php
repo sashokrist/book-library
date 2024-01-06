@@ -21,7 +21,7 @@ class UserCollectionController extends Controller
     public function addToCollection(Request $request)
     {
         $user = Auth::user();
-        $bookId = $request->book_id; // Ensure this is the correct book ID
+        $bookId = $request->book_id;
 
         if ($user->books()->where('book_id', $bookId)->exists()) {
             return redirect()->back()->with('error', 'This book is already in your collection.');
@@ -34,9 +34,8 @@ class UserCollectionController extends Controller
     public function removeBookFromCollection(Book $book)
     {
         $user = Auth::user();
-        $user->books()->detach($book->id); // Detach the book from the user's collection
+        $user->books()->detach($book->id);
 
         return back()->with('success', 'Book removed from collection successfully.');
     }
-
 }

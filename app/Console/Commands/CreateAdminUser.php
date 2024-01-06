@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use App\Models\User; // Import your User model
+use App\Models\User;
 
 class CreateAdminUser extends Command
 {
@@ -23,7 +23,6 @@ class CreateAdminUser extends Command
         $password = $this->secret('Enter password');
         $isAdmin = $this->ask('Is user an admin? (1/0))');
 
-        // Validate email and password (basic validation)
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $this->error('Invalid email format');
             return;
@@ -34,7 +33,6 @@ class CreateAdminUser extends Command
             return;
         }
 
-        // Create user and set isAdmin field
         User::create([
             'name' => $firstName,
             'last_name' => $lastName,
