@@ -1,6 +1,6 @@
-## About Project
+## Book Library application
 
-To run the project follow these steps:
+To install and run the project follow these steps:
 
 run in console: 
 - git clone git@github.com:sashokrist/book-library.git
@@ -13,45 +13,47 @@ run in console:
 - npm install and npm run dev
 - php artisan serve
 
-  Routes are protected with two middleware: auth, and isAdmin.
+Project details:
 
-  The dashboard books page and manage users page have a pagination 10 per page.
+- Routes are protected with two middleware: auth, and isAdmin.
 
-  Admin users can activate and deactivate accounts, make regular users admin, delete every user,
+- The dashboard books page and manage users page have a pagination 10 per page.
 
-   and create, update, delete books, and add books to his/her collection.
+- Admin users can activate and deactivate accounts, make regular users admin, delete every user,
 
-  Regular users can add/delete books to his/her collections, edit profiles, and see the My Books page.
+  and create, update, delete books, and add books to his/her collection.
 
-  Option to upload user avatar.
+- Regular users can add/delete books to his/her collections, edit profiles, and see the My Books page.
 
-  I added a Search functionality to search for books by name, ISBN, or description.
+- Option to upload user avatar.
 
-  Keep count of the current books and users.
+- Search functionality to search for books by name, ISBN, or description.
 
-  Forgot the password option.
+- Keep count of the existing books and users in the database.
 
-  Create User:
+- Forgot the password option.
 
-  To create an admin user:
+Create User:
+
+- To create an admin user:
   
-  Running a command in console: php artisan db:seed, will create an admin user with these credentials:
+   Running a command in console: php artisan db:seed, will create an admin user with these credentials:
 
-  email: admin@admin.com
+   email: admin@admin.com
   
-  password: 12345678
+   password: 12345678
 
-  If you want to specify user info run in console command:
+- If you want to specify user info run in console command:
 
-  php artisan user:create-admin and follow the steps.
+   php artisan user:create-admin and follow the steps.
 
-  PHP Coding Standards Fixer - cs-fixer is installed.
+- PHP Coding Standards Fixer - cs-fixer is installed.
 
-  Laravel v 10, PHP 8.1, MySql 8.2/MariaDB 11.22, Tailwind CSS, Blade.
+- Laravel v 10, PHP 8.1, MySql 8.2/MariaDB 11.22, Tailwind CSS, Blade.
 
-  Total work hours: (18)h.
+- Total work hours: (18)h.
 
-  Screenshots:
+Screenshots:
 
 Welcome
   <img width="959" alt="welcome" src="https://github.com/sashokrist/book-library/assets/11788009/f4726278-3ddd-4dc4-8cec-65dc1f5629eb">
@@ -67,21 +69,28 @@ Welcome
   
 <img width="943" alt="not-active" src="https://github.com/sashokrist/book-library/assets/11788009/279e0731-4edd-46e6-8ec2-851c8d6b53ef">
 
-  
+Regular user dashboard.
 
-  admin dashboard
+<img width="931" alt="regular-user" src="https://github.com/sashokrist/book-library/assets/11788009/c0203960-a7d9-411c-8b4d-718010956a5d">
+
+Admin user dashboard.
+
 <img width="941" alt="admin-dashboard" src="https://github.com/sashokrist/book-library/assets/11788009/948348f0-0273-4e82-b8ca-660130392653">
 
 Create book
+
 <img width="943" alt="create-book" src="https://github.com/sashokrist/book-library/assets/11788009/8f39d5cb-9600-471d-b84f-e0c6fab1ac3c">
 
 Update book
+
 <img width="934" alt="update-book" src="https://github.com/sashokrist/book-library/assets/11788009/776242da-e504-4d5b-b3ee-68dff01184a5">
 
 Add a book to the collection
+
 <img width="904" alt="add-to-collection" src="https://github.com/sashokrist/book-library/assets/11788009/eafa5075-a977-4375-a56b-8634879a128e">
 
 Already in collection
+
 <img width="931" alt="already-added" src="https://github.com/sashokrist/book-library/assets/11788009/90029c9b-54a7-4ed4-a00f-70c74d7756c2">
 
 Delete book
@@ -89,6 +98,7 @@ Delete book
 <img width="905" alt="delete-book" src="https://github.com/sashokrist/book-library/assets/11788009/25b2f23b-5634-48e6-a649-94b796312b32">
 
 Manage users
+
 <img width="916" alt="manage-users" src="https://github.com/sashokrist/book-library/assets/11788009/fdda1aa7-e47d-4dc7-9751-9815339dc748">
 
 Navigation
@@ -106,9 +116,6 @@ Edit profile
 <img width="815" alt="edit-profile-name-lastName-email" src="https://github.com/sashokrist/book-library/assets/11788009/96d13f2b-a4fc-4a17-a010-e53b8b0122c6">
 
 <img width="875" alt="edit-profile-new-password-delete" src="https://github.com/sashokrist/book-library/assets/11788009/4ef82450-6ab5-4ebe-b4d8-286754d4937c">
-
-Regular user
-<img width="931" alt="regular-user" src="https://github.com/sashokrist/book-library/assets/11788009/c0203960-a7d9-411c-8b4d-718010956a5d">
 
 Search
 
