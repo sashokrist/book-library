@@ -17,7 +17,9 @@ run in console:
 
   The dashboard books page and manage users page have a pagination 10 per page.
 
-  Admin users can activate and deactivate accounts, make regular users admin, delete every user, and create, update, delete books, and add books to his/her collection.
+  Admin users can activate and deactivate accounts, make regular users admin, delete every user,
+
+   and create, update, delete books, and add books to his/her collection.
 
   Regular users can add/delete books to his/her collections, edit profiles, and see the My Books page.
 
