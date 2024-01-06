@@ -21,6 +21,8 @@ run in console:
 
   Regular users can add books to his/her collections, edit profiles, and see the My Books page.
 
+  Option to upload user avatar.
+
   Added Search functionality to search for books by name, ISBN, or description.
 
   Forgot password.
@@ -80,6 +82,8 @@ My book
 <img width="916" alt="my-books" src="https://github.com/sashokrist/book-library/assets/11788009/1a96d15a-a51b-4ec6-81d2-27d44b77bd64">
 
 Edit profile
+
+<img width="941" alt="avatar" src="https://github.com/sashokrist/book-library/assets/11788009/676667b1-3185-406f-bc67-36050e01431f">
 
 <img width="815" alt="edit-profile-name-lastName-email" src="https://github.com/sashokrist/book-library/assets/11788009/96d13f2b-a4fc-4a17-a010-e53b8b0122c6">
 
