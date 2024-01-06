@@ -25,6 +25,8 @@ run in console:
 
   I added a Search functionality to search for books by name, ISBN, or description.
 
+  Keep count of the current books and users.
+
   Forgot the password option.
 
   To login as admin(after running php artisan migrate --seed):
@@ -101,6 +103,15 @@ Search
 Search result
 
 <img width="952" alt="search2" src="https://github.com/sashokrist/book-library/assets/11788009/e88922c0-3b91-4b1a-b84f-a13cea23ccf6">
+
+Keep count of the books and users
+
+<img width="935" alt="count1" src="https://github.com/sashokrist/book-library/assets/11788009/62b7e914-518d-493c-a15a-0fcda3d49d5b">
+
+<img width="917" alt="count3" src="https://github.com/sashokrist/book-library/assets/11788009/ac458018-be6d-45fa-a79e-3743c19a1b7e">
+
+<img width="933" alt="count2" src="https://github.com/sashokrist/book-library/assets/11788009/83c8aec5-fd05-4a45-a58a-db4ecbbdea9f">
+
 
 
 
