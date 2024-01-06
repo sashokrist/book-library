@@ -28,6 +28,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/users/manage', [ProfileController::class, 'manage'])->middleware('isAdmin')->name('users.manage');
     Route::post('/users/{user}/toggle-active', [ProfileController::class, 'toggleActive'])->name('users.toggle-active');
     Route::post('/users/{user}/toggle-admin', [ProfileController::class, 'toggleAdminStatus'])->middleware('isAdmin')->name('users.toggle-admin');
+    Route::post('/user/avatar', [ProfileController::class, 'updateAvatar'])->name('user.updateAvatar');
+
 
     //books
     Route::resource('books', BookController::class)->middleware('isAdmin');

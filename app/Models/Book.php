@@ -16,4 +16,3 @@ class Book extends Model
         return $this->belongsToMany(User::class, 'book_user_collection', 'book_id', 'user_id');
     }
 }
-

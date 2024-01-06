@@ -44,6 +44,7 @@
                             <p class="text-lg">{{ __("You're logged in as a regular user! ") }} {{ auth()->user()->name }}
                                 .</p>
                         @endif
+                            Total books in library: ({{ $books->total() }})
 
                         <!-- List of Books -->
                         <div class="mt-6">

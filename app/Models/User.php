@@ -10,7 +10,9 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens;
+    use HasFactory;
+    use Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -52,5 +54,13 @@ class User extends Authenticatable
     public function books()
     {
         return $this->belongsToMany(Book::class, 'book_user_collection', 'user_id', 'book_id');
+    }
+
+    public function updateAvatar($avatar)
+    {
+        $filename = $this->id . '_' . time() . '.' . $avatar->getClientOriginalExtension();
+        $avatar->storeAs('avatars', $filename, 'public');
+        $this->avatar = $filename;
+        $this->save();
     }
 }

@@ -19,19 +19,8 @@ class ProfileController extends Controller
      */
     public function edit(Request $request): View
     {
-        $userId = Auth::id();
-        $collections = UserCollection::with('books')
-            ->where('user_id', $userId)
-            ->get();
-
-       // dd($collections);
-
-        $books = Book::orderBy('created_at', 'desc')->paginate(10);
-
         return view('profile.edit', [
             'user' => $request->user(),
-            'collections' => $collections,
-            'books' => $books,
         ]);
     }
 
@@ -92,5 +81,17 @@ class ProfileController extends Controller
         $user->save();
 
         return back()->with('success', 'User status updated successfully.');
+    }
+
+    public function updateAvatar(Request $request)
+    {
+        $request->validate([
+            'avatar' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $user = auth()->user();
+        $user->updateAvatar($request->file('avatar'));
+
+        return back()->with('success', 'Avatar updated successfully');
     }
 }
