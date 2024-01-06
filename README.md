@@ -9,7 +9,7 @@ run in console:
 - cp .env.example .env
 - php artisan key:generate
 - Set database credentials in .env
-- php artisan migrate --seed     //it creates admin user: admin@admin.com, password: 12345678
+- php artisan migrate --seed
 - npm install and npm run dev
 - php artisan serve
 
@@ -27,9 +27,11 @@ run in console:
 
   Forgot the password option.
 
-  To login as admin:
+  To login as admin(after running php artisan migrate --seed):
 
-  email: admin@admin.com, password: 12345678
+  email: admin@admin.com
+  
+  password: 12345678
 
   Laravel v 10, PHP 8.1, MySql 8.2/MariaDB 11.22, Tailwind CSS, Blade.
 
