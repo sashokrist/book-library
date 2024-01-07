@@ -75,7 +75,7 @@ Not active yet.
 
 Regular user dashboard.
 
-<img width="931" alt="regular-user" src="https://github.com/sashokrist/book-library/assets/11788009/c0203960-a7d9-411c-8b4d-718010956a5d">
+<img width="938" alt="regular-user" src="https://github.com/sashokrist/book-library/assets/11788009/0f167d76-668c-4774-a3c0-bf058f2a4492">
 
 Admin user dashboard.
 
