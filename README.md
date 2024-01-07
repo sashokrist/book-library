@@ -25,6 +25,8 @@ Project details:
 
 - Regular users can add/delete books to his/her collections, edit profiles, and see the My Books page.
 
+- Author added.
+
 - Option to upload user avatar.
 
 - Search functionality to search for books by name, ISBN, or description.
@@ -56,16 +58,18 @@ Create User:
 Screenshots:
 
 Welcome
-  <img width="959" alt="welcome" src="https://github.com/sashokrist/book-library/assets/11788009/f4726278-3ddd-4dc4-8cec-65dc1f5629eb">
 
-  Register
-  <img width="958" alt="register" src="https://github.com/sashokrist/book-library/assets/11788009/fa04fc2d-2b3a-4d34-970a-446c7fe5e7f4">
+<img width="959" alt="welcome" src="https://github.com/sashokrist/book-library/assets/11788009/f4726278-3ddd-4dc4-8cec-65dc1f5629eb">
 
-  Login
+Register
   
-  <img width="956" alt="login" src="https://github.com/sashokrist/book-library/assets/11788009/ae70878e-c724-48d0-af63-1e05132b1636">
+<img width="959" alt="register" src="https://github.com/sashokrist/book-library/assets/11788009/e26bcb5b-1f7c-4fdf-9452-1b9e95f9ab63">
 
-  not active yet
+Login
+  
+<img width="949" alt="login" src="https://github.com/sashokrist/book-library/assets/11788009/8712e211-0fb7-451b-b0b7-ae6655a010e2">
+
+Not active yet.
   
 <img width="943" alt="not-active" src="https://github.com/sashokrist/book-library/assets/11788009/279e0731-4edd-46e6-8ec2-851c8d6b53ef">
 
@@ -75,11 +79,11 @@ Regular user dashboard.
 
 Admin user dashboard.
 
-<img width="941" alt="admin-dashboard" src="https://github.com/sashokrist/book-library/assets/11788009/948348f0-0273-4e82-b8ca-660130392653">
+<img width="947" alt="admin-dashboard" src="https://github.com/sashokrist/book-library/assets/11788009/77f8d43e-004e-4dce-8a10-6204f0d47753">
 
 Create book
 
-<img width="943" alt="create-book" src="https://github.com/sashokrist/book-library/assets/11788009/8f39d5cb-9600-471d-b84f-e0c6fab1ac3c">
+<img width="944" alt="create-book" src="https://github.com/sashokrist/book-library/assets/11788009/0d7ed1b4-b8e6-4b5e-914b-9a48b3d1f568">
 
 Update book
 
