@@ -9,7 +9,7 @@ run in console:
 - cp .env.example .env
 - php artisan key:generate
 - Set database credentials in .env
-- php artisan migrate --seed
+- php artisan migrate --seed  // generate admin user and 10 authors
 - npm install and npm run dev
 - php artisan serve
 
