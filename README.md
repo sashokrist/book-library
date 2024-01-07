@@ -87,7 +87,7 @@ Create book
 
 Update book
 
-<img width="934" alt="update-book" src="https://github.com/sashokrist/book-library/assets/11788009/776242da-e504-4d5b-b3ee-68dff01184a5">
+<img width="944" alt="update-book" src="https://github.com/sashokrist/book-library/assets/11788009/dd2dd55c-74aa-4882-9cc3-93262c0626ee">
 
 Add a book to the collection
 
