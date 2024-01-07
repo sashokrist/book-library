@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Author;
 use App\Models\Book;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -19,14 +20,16 @@ class BookController extends Controller
     public function create()
     {
         $users = User::all();
+        $authors = Author::all();
 
-        return view('books.create', compact('users'));
+        return view('books.create', compact('users', 'authors'));
     }
 
     public function store(Request $request)
     {
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
+            'author_id' => 'required|integer',
             'isbn' => 'required|string|max:255|unique:books',
             'description' => 'required|string',
         ]);

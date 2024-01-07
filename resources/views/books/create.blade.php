@@ -33,6 +33,16 @@
                                    required>
                         </div>
 
+                        {{-- Author Field --}}
+                        <div class="mb-4">
+                            <label for="author_id" class="block text-sm font-bold mb-2">Author</label>
+                            <select name="author_id" class="text-black">
+                                @foreach($authors as $author)
+                                    <option value="{{ $author->id }}">{{ $author->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
                         {{-- ISBN Field --}}
                         <div class="mb-4">
                             <label for="isbn" class="block text-white-700 text-sm font-bold mb-2">ISBN:</label>

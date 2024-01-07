@@ -53,8 +53,8 @@
                                     <li class="mt-1">
                                         Name: <strong>{{ $book->name }}</strong><br>
                                         ISBN: <strong>{{ $book->isbn }}</strong> <br>
-                                        Description:
-                                        <trong>{{ $book->description }}</trong>
+                                        Author: <strong>{{ $book->author->name }}</strong><br>
+                                        Description: <strong>{{ $book->description }}</strong>
                                         <br>
                                         @if(auth()->user() && auth()->user()->isAdmin)
                                             <!-- Admin Action Buttons -->
